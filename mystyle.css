@@ -1,0 +1,104 @@
+
+.face{
+    width: 500px;
+    height: 350px;
+    background-color: #ffce9e;
+    border-radius: 100px;
+}
+.face *{transition: 0.3s;}
+.eye{
+    position: relative;
+    top: 130px;
+    width: 350px;
+    margin: 0 auto;
+}
+.eye .eyes{
+    position: absolute;
+    width: 100px;
+    height: 0px;
+    border-top: 10px solid #222;
+    border-radius: 5px;
+}
+.eye .left{left: 0;}
+.eye .right{right: 0;}
+.eye .eyes .pupil{
+    width: 80px;
+    height: 0px;
+    border-radius: 40px;
+    background-color: #222;
+    margin: 10px auto;
+    opacity: 0;
+}
+.nose{
+    position: relative;
+    top: 150px;
+    width: 50px;
+    height: 70px;
+    background-color: #fa9348;
+    border-radius: 20px; 
+    margin: 0 auto;
+}
+.flushing{
+    position: relative;
+    top: 150px;
+    width: 430px;
+    margin: 0 auto;
+}
+.flushing .flush{
+    position: absolute;
+    width: 120px;
+    height: 50px;
+    background-color: #ff5c5c;
+    border-radius: 25px;
+    opacity: 0;
+    transition: 1s;
+}
+.flushing .f_left{left: 0;}
+.flushing .f_right{right: 0;}
+.mouth{
+    position: relative;
+    top: 170px;
+    width: 100px;
+    height: 30px;
+    margin: 0 auto;
+    background-color: #790000;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.mouth .teeth{
+    position: absolute;
+    bottom: 0;
+    border: 10px solid #fff;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-top-color: transparent;
+}
+.mouth .t_left{left: 0;}
+.mouth .t_right{right: 0;}
+
+/* .face:hover */
+
+.face:hover .eye{top:90px;}
+.face:hover .eyes{
+    height: 100px;
+    background-color: #fff;
+    border-radius: 50px;
+}
+.face:hover .nose{background-color: orangered;}
+.face:hover .pupil{
+    height: 80px;
+    opacity: 1;
+}
+.face:hover .flush{opacity: 1;}
+.face:hover .mouth{
+    width: 170px;
+    height: 60px;
+}
+
+
+
+
+
+
+
+
